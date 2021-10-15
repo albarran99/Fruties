@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Frutis</string>
+    <string name="tvHasComprado">Has comprado: </string>
+    <string name="tvFruit">Fruta</string>
+    <string name="tvVerdura">Verdura</string>
+    <string name="tvAbaricoque">Abaricoque</string>
+    <string name="tvPlatano">Platano</string>
+    <string name="tvPimiento">Pimiento</string>
+    <string name="tvPatatas">Patatas</string>
+    <string name="imgbtnMeloq">Melocoton</string>
+    <string name="imgbtnBanna">Banna</string>
+    <string name="imgbtnPotatoe">Patata</string>
+    <string name="imgbtnPimiento">Pimiento</string>
+    <string name="imgbtnFruit">Fruta</string>
+    <string name="imgbtnVegetable">Verdura</string>
+    <string name="tvResult"> </string>
+
+</resources>

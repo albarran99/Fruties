@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imgbtnBanna"
+        android:layout_width="98dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/imgbtnBanna"
+        android:fitsSystemWindows="false"
+        android:hapticFeedbackEnabled="false"
+        android:onClick="addBanna"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnFruit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/platano"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/imgbtnMeloq"
+        android:layout_width="101dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/imgbtnMeloq"
+        android:onClick="addMeloq"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnFruit"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnBanna"
+        app:srcCompat="@drawable/albaricoque" />
+
+    <ImageButton
+        android:id="@+id/imgbtnPotatoe"
+        android:layout_width="104dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imgbtnPotatoe"
+        android:onClick="addPotatoe"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnVegetable"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnMeloq"
+        app:srcCompat="@drawable/patata"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/imgbtnPimiento"
+        android:layout_width="105dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/imgbtnPimiento"
+        android:onClick="addPimiento"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnVegetable"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnPotatoe"
+        app:srcCompat="@drawable/pimiento"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imgbtnFruit"
+        android:layout_width="125dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/imgbtnFruit"
+        android:onClick="showFruta"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frutageneric"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imgbtnVegetable"
+        android:layout_width="125dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
+        android:contentDescription="@string/imgbtnVegetable"
+        android:onClick="showVegetables"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnFruit"
+        app:srcCompat="@drawable/verdurageneric"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/tvHasComprado"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnVegetable"
+        tools:text="@string/tvHasComprado" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tvResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="@string/tvResult" />
+
+    <TextView
+        android:id="@+id/tvFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tvFruit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/tvFruit" />
+
+    <TextView
+        android:id="@+id/tvVegetables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/tvVerdura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnFruit"
+        tools:text="@string/tvVerdura" />
+
+    <TextView
+        android:id="@+id/tvBanna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="69dp"
+        android:text="@string/tvPlatano"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnFruit"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/tvPlatano" />
+
+    <TextView
+        android:id="@+id/tvMeloq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/tvAbaricoque"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnFruit"
+        app:layout_constraintTop_toBottomOf="@+id/tvBanna"
+        tools:text="@string/tvAbaricoque" />
+
+    <TextView
+        android:id="@+id/tvPotatoe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="71dp"
+        android:text="@string/tvPatatas"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnVegetable"
+        app:layout_constraintTop_toBottomOf="@+id/tvMeloq"
+        tools:text="@string/tvPatatas" />
+
+    <TextView
+        android:id="@+id/tvPimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/tvPimiento"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnVegetable"
+        app:layout_constraintTop_toBottomOf="@+id/tvPotatoe"
+        tools:text="@string/tvPimiento" />
+</androidx.constraintlayout.widget.ConstraintLayout>
